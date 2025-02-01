@@ -1,4 +1,7 @@
-on: [push]
+on:
+  push:
+    branches:
+      - 'mahdi/new-ui'  # تغییر این الگو بسته به نام شاخه‌های شما
 
 jobs:
   build:
@@ -20,7 +23,7 @@ jobs:
 
       - name: Lint
         run: pnpm lint
-        
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
