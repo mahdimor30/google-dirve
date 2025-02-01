@@ -1,4 +1,4 @@
-import GoogleDriveClone from "@/components/GoogleDriveClone"
+import GoogleDriveClone from "./GoogleDriveClone"
 
 export default function Home() {
   return (
