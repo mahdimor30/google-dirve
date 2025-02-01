@@ -41,7 +41,7 @@ const GoogleDriveClone: React.FC = () => {
       } else {
         // This is a simplified navigation. In a real app, you'd need to traverse the folder structure.
         const folder = mockDriveData.find((item) => item.id === breadcrumb.id)
-        if (folder && folder.children) {
+        if (folder?.children) {
           setCurrentFolder(folder.children)
         }
       }
